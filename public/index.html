@@ -10,7 +10,143 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{ message }}</h1>
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <!-- nav desktop -->
+                <scrollactive id="nav-lg" 
+                active-class="active"
+                :offset="100"
+                :always-track="true"
+                :duration="600"
+                :click-to-scroll="true"
+                :bezier-easing-value="'.5,0,.35,1'">
+                    <!-- logo -->
+                    <svg id="SSlogo" @click="reloadPage" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 500 500" xml:space="preserve">
+                        <path id="Bordo" d="M475,25v450H25V25H475 M500,0H0v500h500V0L500,0z"/>
+                        <g id="Marchio">
+                            <g>
+                                <path d="M175.9,324.3c-0.7-0.7-1.2-1.3-1.8-2.1c-0.2-0.2-0.3-0.4-0.5-0.7s-0.4-0.6-0.6-0.8c-0.1-0.2-0.3-0.4-0.4-0.7
+                                    c-0.1-0.1-0.2-0.3-0.3-0.4l-0.1-0.1c-0.2-0.3-0.4-0.7-0.6-1c-0.2-0.3-0.3-0.7-0.4-1c-0.1-0.1-0.1-0.1-0.1-0.2
+                                    c-0.1-0.3-0.3-0.6-0.4-0.9s-0.3-0.7-0.4-1c-0.1-0.1-0.1-0.2-0.1-0.3c-0.1-0.2-0.2-0.4-0.2-0.7c-0.1-0.1-0.1-0.3-0.1-0.4
+                                    c-0.1-0.1-0.1-0.4-0.1-0.6c-0.1-0.2-0.1-0.4-0.1-0.7c0-0.1-0.1-0.2-0.1-0.3c-0.1-0.2-0.1-0.4-0.1-0.7l-0.1-0.4
+                                    c-0.1-0.2-0.1-0.5-0.1-0.7c0-0.1,0-0.2,0-0.2c-0.1-0.3-0.1-0.7-0.1-1c-0.1-0.3-0.1-0.7-0.1-1.1c0-0.2,0-0.4,0-0.6
+                                    c0-6.2,2.4-12.1,6.8-16.5l-25.2-24.3c-0.1,0.1-0.2,0.2-0.4,0.4c-10.4,10.8-16.2,25.3-16.2,40.3c0,0.2,0,0.4,0,0.6
+                                    c0.3,32.1,26.7,57.9,58.8,57.6c15.2-0.1,29.8-6.2,40.6-17.1l-24.6-24.8C199.8,333.4,185,333.4,175.9,324.3"/>
+                                <path d="M348.8,266.6l-19.9-19.9l-37.7-37.8c-8.9-9.3-8.5-24.1,0.8-32.9c9-8.6,23.1-8.6,32.1,0l24.7-24.7
+                                    c-22.9-22.6-59.7-22.6-82.4,0.2c-22.6,22.7-22.6,59.5,0,82.2l19.9,19.9l37.8,37.8c9.3,9,9.5,23.7,0.4,32.9s-23.7,9.5-32.9,0.4
+                                    c-0.2-0.1-0.3-0.3-0.4-0.4l-37.8-37.8l-19.9-19.9l-19.9-19.9L175.8,209c-9.3-9-9.5-23.7-0.4-32.9c9-9.2,23.7-9.5,32.9-0.4
+                                    c0.2,0.1,0.3,0.3,0.4,0.4l24.7-24.7c-22.6-22.9-59.5-23.2-82.3-0.7s-23.2,59.5-0.7,82.3c0.2,0.2,0.4,0.4,0.7,0.7l19.9,19.9
+                                    l75.6,75.5l19.9,19.9c22.6,22.9,59.5,22.9,82.3,0.3c22.8-22.6,22.9-59.5,0.3-82.3C349.1,266.9,349,266.7,348.8,266.6"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <!-- navbar -->
+                    <ul>
+                        <li>
+                            <span>01.</span>
+                            <a href="#about" class="scrollactive-item nav-item">About</a>
+                        </li>
+                        <li>
+                            <span>02.</span>
+                            <a href="#skills" class="scrollactive-item nav-item">Skills</a>
+                        </li>
+                        <li>
+                            <span>03.</span>
+                            <a href="#work" class="scrollactive-item nav-item">Work</a>
+                        </li>
+                        <li>
+                            <span>04.</span>
+                            <a href="#contact" class="scrollactive-item nav-item">Contact</a>
+                        </li>
+                    </ul>
+                </scrollactive>
+                <!-- /nav desktop -->
+
+                <!-- nav mobile -->
+                <scrollactive id="nav-sm" 
+                active-class="active"
+                :offset="100"
+                :always-track="true"
+                :duration="600"
+                :click-to-scroll="true"
+                :bezier-easing-value="'.5,0,.35,1'">
+                    <!-- logo -->
+                    <svg id="SSlogo" @click="reloadPage" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 500 500" xml:space="preserve">
+                        <path id="Bordo" d="M475,25v450H25V25H475 M500,0H0v500h500V0L500,0z"/>
+                        <g id="Marchio">
+                            <g>
+                                <path d="M175.9,324.3c-0.7-0.7-1.2-1.3-1.8-2.1c-0.2-0.2-0.3-0.4-0.5-0.7s-0.4-0.6-0.6-0.8c-0.1-0.2-0.3-0.4-0.4-0.7
+                                    c-0.1-0.1-0.2-0.3-0.3-0.4l-0.1-0.1c-0.2-0.3-0.4-0.7-0.6-1c-0.2-0.3-0.3-0.7-0.4-1c-0.1-0.1-0.1-0.1-0.1-0.2
+                                    c-0.1-0.3-0.3-0.6-0.4-0.9s-0.3-0.7-0.4-1c-0.1-0.1-0.1-0.2-0.1-0.3c-0.1-0.2-0.2-0.4-0.2-0.7c-0.1-0.1-0.1-0.3-0.1-0.4
+                                    c-0.1-0.1-0.1-0.4-0.1-0.6c-0.1-0.2-0.1-0.4-0.1-0.7c0-0.1-0.1-0.2-0.1-0.3c-0.1-0.2-0.1-0.4-0.1-0.7l-0.1-0.4
+                                    c-0.1-0.2-0.1-0.5-0.1-0.7c0-0.1,0-0.2,0-0.2c-0.1-0.3-0.1-0.7-0.1-1c-0.1-0.3-0.1-0.7-0.1-1.1c0-0.2,0-0.4,0-0.6
+                                    c0-6.2,2.4-12.1,6.8-16.5l-25.2-24.3c-0.1,0.1-0.2,0.2-0.4,0.4c-10.4,10.8-16.2,25.3-16.2,40.3c0,0.2,0,0.4,0,0.6
+                                    c0.3,32.1,26.7,57.9,58.8,57.6c15.2-0.1,29.8-6.2,40.6-17.1l-24.6-24.8C199.8,333.4,185,333.4,175.9,324.3"/>
+                                <path d="M348.8,266.6l-19.9-19.9l-37.7-37.8c-8.9-9.3-8.5-24.1,0.8-32.9c9-8.6,23.1-8.6,32.1,0l24.7-24.7
+                                    c-22.9-22.6-59.7-22.6-82.4,0.2c-22.6,22.7-22.6,59.5,0,82.2l19.9,19.9l37.8,37.8c9.3,9,9.5,23.7,0.4,32.9s-23.7,9.5-32.9,0.4
+                                    c-0.2-0.1-0.3-0.3-0.4-0.4l-37.8-37.8l-19.9-19.9l-19.9-19.9L175.8,209c-9.3-9-9.5-23.7-0.4-32.9c9-9.2,23.7-9.5,32.9-0.4
+                                    c0.2,0.1,0.3,0.3,0.4,0.4l24.7-24.7c-22.6-22.9-59.5-23.2-82.3-0.7s-23.2,59.5-0.7,82.3c0.2,0.2,0.4,0.4,0.7,0.7l19.9,19.9
+                                    l75.6,75.5l19.9,19.9c22.6,22.9,59.5,22.9,82.3,0.3c22.8-22.6,22.9-59.5,0.3-82.3C349.1,266.9,349,266.7,348.8,266.6"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <!-- hamburger icon -->
+                    <svg @click="showNav" version="1.1" id="hamburger-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 300 300"  xml:space="preserve">
+                        <<rect width="300" height="39.5"/>
+                        <rect x="75" y="130.3" width="225" height="39.5"/>
+                        <rect x="150" y="260.5" width="150" height="39.5"/>
+                    </svg>
+                    <!-- navbar -->
+                    <ul class="nav-tab" :class="navbarShow ? 'show' : ''">
+                        <li>
+                            <span>01.</span>
+                            <a href="#about" class="scrollactive-item nav-item" @click="navbarShow = false">About</a>
+                        </li>
+                        <li>
+                            <span>02.</span>
+                            <a href="#skills" class="scrollactive-item nav-item" @click="navbarShow = false">Skills</a>
+                        </li>
+                        <li>
+                            <span>03.</span>
+                            <a href="#work" class="scrollactive-item nav-item" @click="navbarShow = false">Work</a>
+                        </li>
+                        <li>
+                            <span>04.</span>
+                            <a href="#contact" class="scrollactive-item nav-item" @click="navbarShow = false">Contact</a>
+                        </li>
+                    </ul>
+                </scrollactive>
+                <!-- /nav mobile -->
+            </nav>
+        </header>
+        <!-- /HEADER -->
+        
+
+        <main>
+            <section id="about" class="section">
+                <h1>Section 1</h1>
+            </section>
+
+            <section id="skills" class="section">
+                <h1>Section 2</h1>
+            </section>
+
+            <section id="work" class="section">
+                <h1>Section 3</h1>
+            </section>
+            
+            <section id="contact" class="section">
+                <h1>Section 4</h1>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
     </div>
 
     <!-- my js -->
