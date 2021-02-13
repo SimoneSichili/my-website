@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: $primaryFont;
 }
 
@@ -13,5 +16,5 @@
 }
 
 #nav-sm .show {
-    transform: translateX(-150px);
+    transform: translateX(-250px);
 }
