@@ -13,6 +13,7 @@
     font-size: 12px;
     background-color: $mainColorDark;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 9;
     #SSlogo {
         width: 40px;
         fill: $mainTextLight;
@@ -68,6 +69,7 @@
         font-size: 12px;
         background-color: $mainColorDark;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        z-index: 9;
         #SSlogo {
             width: 40px;
             fill: $mainTextLight;
@@ -118,25 +120,3 @@
     }
     // /nav mobile
 }
-
-
-/* ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    li {
-        margin-left: 30px;
-        span {
-            margin-right: 5px;
-            color: $secondaryColor;
-        }
-        a {
-            text-decoration: none;
-            color: $mainTextLight;
-            font-size: 14px;
-            &:hover {
-                color: $secondaryColor;
-            }
-        }
-    }
-} */

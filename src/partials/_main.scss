@@ -1,0 +1,54 @@
+#about {
+    width: 100%;
+    padding: 150px 0 100px 0;
+    >p {
+        margin-bottom: 20px;
+        color: $secondaryColor;
+        font-family: $secondaryFont;
+    }
+    h1 {
+        margin-bottom: 30px;
+        font-size: 80px;
+        color: $mainTextLight;
+        line-height: 1;
+        span {
+            color: $mainText;
+            font-size: 60px;
+        }
+    }
+}
+
+#skills {
+    width: 100%;
+    padding: 100px 0 100px 0;
+}
+
+#work {
+    background-color: green;
+}
+
+#contact {
+    background-color: coral;
+}
+
+@media screen and (max-width: 997px) {
+    #about {
+        padding: 150px 0 50px 0;
+        >p {
+            margin-bottom: 20px;
+            color: $secondaryColor;
+            font-family: $secondaryFont;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 70px;
+            color: $mainTextLight;
+            line-height: 1;
+            span {
+                color: $mainText;
+                font-size: 50px;
+            }
+        }
+
+    }
+}

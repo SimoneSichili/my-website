@@ -8,6 +8,27 @@
 
 body {
   font-family: "Work Sans", "Arial", "Segoe UI", "Tahoma", sans-serif;
+  background-color: #282c35;
+}
+
+.container {
+  max-width: 1140px;
+  height: 100%;
+  padding: 0 30px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #00FFFF;
+  font-family: "Fira Code", "Lucida Console", "Courier", monospace;
+  border: 1px solid #00FFFF;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: rgba(0, 255, 255, 0.05);
 }
 
 #nav-lg .active,
@@ -20,18 +41,29 @@ body {
   transform: translateX(-250px);
 }
 
-.section {
-  width: 100%;
-  height: 100vh;
-}
-
 #about {
-  padding-top: 150px;
-  background-color: lightcoral;
+  width: 100%;
+  padding: 150px 0 100px 0;
+}
+#about > p {
+  margin-bottom: 20px;
+  color: #00FFFF;
+  font-family: "Fira Code", "Lucida Console", "Courier", monospace;
+}
+#about h1 {
+  margin-bottom: 30px;
+  font-size: 80px;
+  color: #ccd6f6;
+  line-height: 1;
+}
+#about h1 span {
+  color: #8892b0;
+  font-size: 60px;
 }
 
 #skills {
-  background-color: orange;
+  width: 100%;
+  padding: 100px 0 100px 0;
 }
 
 #work {
@@ -42,6 +74,26 @@ body {
   background-color: coral;
 }
 
+@media screen and (max-width: 997px) {
+  #about {
+    padding: 150px 0 50px 0;
+  }
+  #about > p {
+    margin-bottom: 20px;
+    color: #00FFFF;
+    font-family: "Fira Code", "Lucida Console", "Courier", monospace;
+  }
+  #about h1 {
+    margin-bottom: 30px;
+    font-size: 70px;
+    color: #ccd6f6;
+    line-height: 1;
+  }
+  #about h1 span {
+    color: #8892b0;
+    font-size: 50px;
+  }
+}
 #nav-lg {
   position: fixed;
   top: 0;
@@ -54,8 +106,9 @@ body {
   padding: 0 60px;
   font-family: "Fira Code", "Lucida Console", "Courier", monospace;
   font-size: 12px;
-  background-color: #282c35;
+  background-color: #21242b;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 9;
 }
 #nav-lg #SSlogo {
   width: 40px;
@@ -107,8 +160,9 @@ body {
     padding: 0 30px;
     font-family: "Fira Code", "Lucida Console", "Courier", monospace;
     font-size: 12px;
-    background-color: #282c35;
+    background-color: #21242b;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 9;
   }
   #nav-sm #SSlogo {
     width: 40px;
@@ -134,7 +188,7 @@ body {
     height: calc(100vh - 80px);
     padding: 50px 0;
     text-align: center;
-    background-color: #282c35;
+    background-color: #21242b;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
     list-style: none;
@@ -158,23 +212,3 @@ body {
     color: #00FFFF;
   }
 }
-/* ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    li {
-        margin-left: 30px;
-        span {
-            margin-right: 5px;
-            color: $secondaryColor;
-        }
-        a {
-            text-decoration: none;
-            color: $mainTextLight;
-            font-size: 14px;
-            &:hover {
-                color: $secondaryColor;
-            }
-        }
-    }
-} */

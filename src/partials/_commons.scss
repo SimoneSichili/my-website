@@ -6,6 +6,27 @@
 
 body {
     font-family: $primaryFont;
+    background-color: $mainColor;
+}
+
+.container {
+    max-width: 1140px;
+    height: 100%;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: $secondaryColor;
+    font-family: $secondaryFont;
+    border: 1px solid $secondaryColor;
+    border-radius: 10px;
+    &:hover {
+        background-color: rgba($secondaryColor, 0.05);
+    }
 }
 
 // nav active class
