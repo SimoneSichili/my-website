@@ -1,0 +1,53 @@
+#about {
+    padding: 150px 0;
+    .heading::before {
+        content: "01.";
+    }
+    .about-container {
+        display: flex;
+        margin-left: -30px;
+        margin-right: -30px;
+        .card {
+            margin: 0 30px;
+            &:first-child {
+                width: 75%;
+            }
+            &:last-child {
+                width: 25%;
+            }
+            p {
+                margin-bottom: 15px;
+                color: $mainText;
+                line-height: 1.4;
+                strong {
+                    color: $secondaryColor;
+                }
+            }
+            img {
+                display: block;
+                width: 100%;
+                filter: grayscale(100%);
+                &:hover {
+                    filter: none;
+                }
+                
+            }
+            .filter {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%; 
+                background-color: rgba($secondaryColor, 0.2);
+            }
+        }
+        .filtered {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            &:hover .filter {
+                display: none;
+            }
+        }
+    }
+}
