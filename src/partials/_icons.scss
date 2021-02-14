@@ -1,0 +1,29 @@
+#html {
+    #fill {
+        fill: transparent;
+    }
+    #back{
+        fill: transparent;
+    }
+    #inner_border {
+        fill: $secondaryColor;
+    }
+    #outer_border {
+        fill:  $secondaryColor;
+    }
+}
+
+#html:hover {
+    #fill {
+        fill: #fff;
+    }
+    #back{
+        fill: #E44D26;
+    }
+    #inner_border {
+        fill: transparent;
+    }
+    #outer_border {
+        fill:  transparent;
+    } 
+}

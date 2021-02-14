@@ -67,13 +67,6 @@ body {
   transform: translateX(-250px);
 }
 
-#skills {
-  width: 100%;
-  padding: 150px 0;
-  height: 500px;
-  margin-bottom: 50px;
-}
-
 #work {
   padding: 150px 0;
   height: 500px;
@@ -188,6 +181,86 @@ body {
 }
 #about .about-container .filtered:hover .filter {
   display: none;
+}
+
+#skills {
+  padding: 150px 0;
+}
+#skills .heading::before {
+  content: "02.";
+}
+#skills .skills-container {
+  display: flex;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#skills .skills-container .cards-container {
+  margin: 0 30px;
+  text-align: center;
+  font-family: "Fira Code", "Lucida Console", "Courier", monospace;
+  font-size: 14px;
+  color: #00FFFF;
+}
+#skills .skills-container .cards-container:first-child {
+  width: 60%;
+}
+#skills .skills-container .cards-container:first-child .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#skills .skills-container .cards-container:first-child .cards img,
+#skills .skills-container .cards-container:first-child .cards svg {
+  width: calc(100% / 4 - 20px);
+  height: 50px;
+  margin-bottom: 30px;
+}
+#skills .skills-container .cards-container:last-child {
+  width: 40%;
+}
+#skills .skills-container .cards-container:last-child .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#skills .skills-container .cards-container:last-child .cards div {
+  width: calc(100% / 3 - 20px);
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: red;
+  border: 1px solid black;
+}
+#skills .skills-container .cards-container h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#html #fill {
+  fill: transparent;
+}
+#html #back {
+  fill: transparent;
+}
+#html #inner_border {
+  fill: #00FFFF;
+}
+#html #outer_border {
+  fill: #00FFFF;
+}
+
+#html:hover #fill {
+  fill: #fff;
+}
+#html:hover #back {
+  fill: #E44D26;
+}
+#html:hover #inner_border {
+  fill: transparent;
+}
+#html:hover #outer_border {
+  fill: transparent;
 }
 
 #nav-lg {
