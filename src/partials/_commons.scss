@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-    max-width: 940px;
+    max-width: 1040px;
     height: 100%;
-    padding: 0 30px;
+    padding: 0 80px;
     margin: auto;
 }
 
@@ -67,15 +67,33 @@ body {
     transform: translateX(-250px);
 }
 
-
-#work {
+#contact {
     padding: 150px 0;
     height: 500px;
     margin-bottom: 50px;
 }
 
-#contact {
-    padding: 150px 0;
-    height: 500px;
-    margin-bottom: 50px;
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 940px;
+        height: 100%;
+        padding: 0 30px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heading {
+        &::after {
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .heading {
+        &::after {
+            width: 50px;
+        }
+    }
 }

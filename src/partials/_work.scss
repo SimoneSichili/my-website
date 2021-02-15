@@ -1,0 +1,60 @@
+#work {
+    padding: 100px 0;
+    .heading::before {
+        content: "03.";
+    }
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .project  {
+            width: calc(100% / 2 - 15px);
+            img {
+                display: block;
+                width: 100%;
+            }
+            .description {
+                position: relative;
+                top: -50px;
+                width: 90%;
+                margin: auto;
+                padding: 15px 15px 45px 15px;
+                background-color: $mainColorNavy;
+                border-radius: 10px;
+                h5 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $secondaryFont;
+                    color: $secondaryColor;
+                }
+                h3 {
+                    margin: 10px 0;
+                    font-size: 28px;
+                    color: $mainTextLight;
+                }
+                .tools {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $secondaryFont;
+                    color: $mainText;
+                }
+                .link-icons {
+                    position: absolute;
+                    right: 15px;
+                    bottom: 15px;
+                    svg {
+                        width: 20px;
+                        margin-left: 10px;
+                        fill: $mainText;
+                        transition: all .2s ease-in-out;
+                        &:hover {
+                            fill: $secondaryColor;
+                            transform: scale(1.1)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

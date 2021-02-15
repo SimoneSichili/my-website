@@ -31,11 +31,71 @@
                     }
                 }
             }
-            h3 {
+            h4 {
+                font-size: 16px;
                 font-weight: 400;
                 margin-bottom: 15px;
             }
             
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #skills {
+        padding: 100px 0;
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            .cards-container {
+                &:first-child {
+                    width: 100%;
+                    .cards {
+                        @include skillCards;
+                        margin-bottom: 30px;
+                        svg {
+                            @include skillSvg(4);
+                        }
+                    }
+                }
+                &:last-child {
+                    width: 100%;
+                    .cards {
+                        @include skillCards;
+                        svg {
+                            @include skillSvg(3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #skills {
+        padding: 100px 0;
+        .skills-container {
+            .cards-container {
+                &:first-child {
+                    width: 100%;
+                    .cards {
+                        svg {
+                            @include skillSvg(4);
+                            padding: 15px;
+                        }
+                    }
+                }
+                &:last-child {
+                    width: 100%;
+                    .cards {
+                        svg {
+                            @include skillSvg(3);
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

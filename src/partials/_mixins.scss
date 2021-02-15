@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 10px;
     align-items: center;
     border: 1px solid $mainText;
     border-radius: 10px;
@@ -10,8 +10,8 @@
 
 @mixin skillSvg($numCards) {
     width: calc(100% / #{$numCards});
-    height: 70px;
-    padding: 10px;
+    height: 90px;
+    padding: 20px;
     fill: $mainText;
     transition: all .3s ease-in-out;
     &:hover {
@@ -19,3 +19,4 @@
         transform: scale(1.1);
     }
 }
+
