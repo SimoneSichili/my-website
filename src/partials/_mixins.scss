@@ -1,0 +1,21 @@
+@mixin skillCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border: 1px solid $mainText;
+    border-radius: 10px;
+}
+
+@mixin skillSvg($numCards) {
+    width: calc(100% / #{$numCards});
+    height: 70px;
+    padding: 10px;
+    fill: $mainText;
+    transition: all .3s ease-in-out;
+    &:hover {
+        fill: $secondaryColor;
+        transform: scale(1.1);
+    }
+}

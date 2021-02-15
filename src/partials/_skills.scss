@@ -1,5 +1,5 @@
 #skills {
-    padding: 150px 0;
+    padding: 100px 0;
     .heading::before {
         content: "02.";
     }
@@ -16,31 +16,18 @@
             &:first-child {
                 width: 60%;
                 .cards {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    align-items: center;
-                    img,
+                    @include skillCards;
                     svg {
-                        width: calc(100% / 4 - 20px);
-                        height: 50px;
-                        margin-bottom: 30px;
+                        @include skillSvg(4);
                     }
                 }
             }
             &:last-child {
                 width: 40%;
                 .cards {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    align-items: center;
-                    div{
-                        width: calc(100% / 3 - 20px);
-                        height: 50px;
-                        margin-bottom: 20px;
-                        background-color: red;
-                        border: 1px solid black;    
+                    @include skillCards;
+                    svg {
+                        @include skillSvg(3);
                     }
                 }
             }
