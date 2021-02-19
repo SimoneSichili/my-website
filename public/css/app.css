@@ -36,13 +36,14 @@ body {
   display: flex;
   align-items: baseline;
   margin-bottom: 30px;
-  font-size: 28px;
+  font-size: 32px;
   color: #ccd6f6;
 }
 .heading::before {
   content: "";
   font-size: 20px;
   font-family: "Fira Code", "Lucida Console", "Courier", monospace;
+  font-weight: 400;
   color: #00FFFF;
   margin-right: 10px;
 }
@@ -65,12 +66,6 @@ body {
 
 #nav-sm .show {
   transform: translateX(-250px);
-}
-
-#contact {
-  padding: 150px 0;
-  height: 500px;
-  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -330,7 +325,7 @@ body {
   }
 }
 #about {
-  padding: 150px 0 100px 0;
+  padding: 150px 0;
 }
 #about .heading::before {
   content: "01.";
@@ -414,7 +409,7 @@ body {
   }
 }
 #skills {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 #skills .heading::before {
   content: "02.";
@@ -575,7 +570,7 @@ body {
   }
 }
 #work {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 #work .heading::before {
   content: "03.";
@@ -591,14 +586,15 @@ body {
 #work .projects-container .project img {
   display: block;
   width: 100%;
+  border-radius: 10px;
 }
 #work .projects-container .project .description {
   position: relative;
   top: -50px;
   width: 90%;
   margin: auto;
-  padding: 15px 15px 45px 15px;
-  background-color: #112240;
+  padding: 15px 15px 60px 15px;
+  background-color: #21242b;
   border-radius: 10px;
 }
 #work .projects-container .project .description h5 {
@@ -635,6 +631,62 @@ body {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px) {
+  #work {
+    padding: 100px 0;
+  }
+  #work .projects-container .project {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #work {
+    padding: 100px 0;
+  }
+  #work .projects-container .project {
+    width: 100%;
+  }
+  #work .projects-container .project .description {
+    padding: 15px 15px 45px 15px;
+  }
+  #work .projects-container .project .description h5 {
+    font-size: 12px;
+  }
+  #work .projects-container .project .description h3 {
+    font-size: 20px;
+  }
+  #work .projects-container .project .description .tools {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  #work .projects-container .project .description .link-icons {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  #work .projects-container .project .description .link-icons svg {
+    width: 20px;
+    margin-left: 10px;
+    fill: #8892b0;
+    transition: all 0.2s ease-in-out;
+  }
+  #work .projects-container .project .description .link-icons svg:hover {
+    fill: #00FFFF;
+    transform: scale(1.1);
+  }
+}
+#contact {
+  padding: 150px 0;
+}
+#contact .heading::before {
+  content: "04.";
+}
+#contact p {
+  color: #8892b0;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
 footer {
   text-align: center;
   padding: 100px 0 20px 0;
@@ -642,11 +694,14 @@ footer {
   font-family: "Fira Code", "Lucida Console", "Courier", monospace;
 }
 footer a {
+  display: inline-block;
   text-decoration: none;
   color: #8892b0;
+  transition: all 0.2s ease-in-out;
 }
 footer a:hover {
   color: #00FFFF;
+  transform: scale(1.01);
 }
 
 #side-elements {

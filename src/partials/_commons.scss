@@ -34,12 +34,13 @@ body {
     display: flex;
     align-items: baseline;
     margin-bottom: 30px;
-    font-size: 28px;
+    font-size: 32px;
     color: $mainTextLight;
     &::before {
         content:"";
         font-size: 20px;
         font-family: $secondaryFont;
+        font-weight: 400;
         color: $secondaryColor;
         margin-right: 10px;
     }
@@ -65,12 +66,6 @@ body {
 
 #nav-sm .show {
     transform: translateX(-250px);
-}
-
-#contact {
-    padding: 150px 0;
-    height: 500px;
-    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {

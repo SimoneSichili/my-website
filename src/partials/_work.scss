@@ -1,5 +1,5 @@
 #work {
-    padding: 100px 0;
+    padding: 150px 0;
     .heading::before {
         content: "03.";
     }
@@ -12,14 +12,15 @@
             img {
                 display: block;
                 width: 100%;
+                border-radius: 10px;
             }
             .description {
                 position: relative;
                 top: -50px;
                 width: 90%;
                 margin: auto;
-                padding: 15px 15px 45px 15px;
-                background-color: $mainColorNavy;
+                padding: 15px 15px 60px 15px;
+                background-color: $mainColorDark;
                 border-radius: 10px;
                 h5 {
                     font-size: 14px;
@@ -51,6 +52,56 @@
                         &:hover {
                             fill: $secondaryColor;
                             transform: scale(1.1)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #work {
+        padding: 100px 0;
+        .projects-container {
+            .project  {
+                width: 100%; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #work {
+        padding: 100px 0;
+        .projects-container {
+            .project  {
+                width: 100%;
+                .description {
+                    padding: 15px 15px 45px 15px;
+                    h5 {
+                        font-size: 12px;
+                    }
+                    h3 {
+                        font-size: 20px;
+                    }
+                    .tools {
+                        margin-top: 10px;
+                        font-size: 12px;
+                    }
+                    .link-icons {
+                        position: absolute;
+                        right: 15px;
+                        bottom: 15px;
+                        svg {
+                            width: 20px;
+                            margin-left: 10px;
+                            fill: $mainText;
+                            transition: all .2s ease-in-out;
+                            &:hover {
+                                fill: $secondaryColor;
+                                transform: scale(1.1)
+                            }
                         }
                     }
                 }
