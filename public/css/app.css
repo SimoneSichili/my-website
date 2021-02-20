@@ -4,12 +4,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
   font-family: "Work Sans", "Arial", "Segoe UI", "Tahoma", sans-serif;
   background-color: #282c35;
   font-size: 18px;
+}
+
+::-moz-selection {
+  color: #ccd6f6;
+  background-color: #8892b0;
+}
+
+::selection {
+  color: #ccd6f6;
+  background-color: #8892b0;
 }
 
 .container {
@@ -24,9 +35,11 @@ body {
   padding: 20px 30px;
   text-decoration: none;
   color: #00FFFF;
+  background-color: transparent;
   font-family: "Fira Code", "Lucida Console", "Courier", monospace;
   border: 1px solid #00FFFF;
   border-radius: 10px;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: rgba(0, 255, 255, 0.05);
@@ -68,6 +81,39 @@ body {
   transform: translateX(-250px);
 }
 
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  color: #00FFFF;
+  font-family: "Fira Code", "Lucida Console", "Courier", monospace;
+}
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  color: #ccd6f6;
+  background-color: transparent;
+  font-family: "Work Sans", "Arial", "Segoe UI", "Tahoma", sans-serif;
+  border: 0;
+  border-bottom: 1px solid rgba(136, 146, 176, 0.5);
+}
+.form-group ::-moz-placeholder {
+  color: rgba(136, 146, 176, 0.5);
+}
+.form-group :-ms-input-placeholder {
+  color: rgba(136, 146, 176, 0.5);
+}
+.form-group ::placeholder {
+  color: rgba(136, 146, 176, 0.5);
+}
+
 @media screen and (max-width: 768px) {
   .container {
     max-width: 940px;
@@ -84,6 +130,47 @@ body {
 @media screen and (max-width: 400px) {
   .heading::after {
     width: 50px;
+  }
+}
+#err404 {
+  width: 100%;
+  height: calc(100vh - 160px);
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#err404 h1 {
+  font-size: 200px;
+  font-family: "Fira Code", "Lucida Console", "Courier", monospace;
+  color: #00FFFF;
+}
+#err404 h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #ccd6f6;
+  margin-top: -15px;
+  margin-bottom: 45px;
+}
+
+@media screen and (max-width: 500px) {
+  #err404 h1 {
+    font-size: 100px;
+  }
+  #err404 h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #err404 h1 {
+    font-size: 80px;
+  }
+  #err404 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 }
 #nav-lg {
@@ -688,13 +775,15 @@ body {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
   text-align: center;
-  padding: 100px 0 20px 0;
   font-size: 12px;
   font-family: "Fira Code", "Lucida Console", "Courier", monospace;
 }
 footer a {
-  display: inline-block;
   text-decoration: none;
   color: #8892b0;
   transition: all 0.2s ease-in-out;

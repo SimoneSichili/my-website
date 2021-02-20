@@ -1,0 +1,46 @@
+#err404 {
+    width: 100%;
+    height: calc(100vh - 160px);
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        font-size: 200px;
+        font-family: $secondaryFont;
+        color: $secondaryColor;
+    }
+    h2 {
+        font-size: 50px;
+        font-weight: 400;
+        color: $mainTextLight;
+        margin-top: -15px;
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #err404 {
+        h1 {
+            font-size: 100px;
+        }
+        h2 {
+            font-size: 40px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #err404 {
+        h1 {
+            font-size: 80px;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}

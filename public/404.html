@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#282c35">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Simone Sichili">
+    <meta name="application-name" content="Simone Sichili">
+    <meta name="msapplication-TileColor" content="#282c35">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#282c35">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/app.css">
+    <title>Page Not Found | Simone Sichili</title>
+</head>
+<body>
+    <div id="app">
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <!-- nav desktop -->
+                <scrollactive id="nav-lg" 
+                active-class="active"
+                :offset="100"
+                :always-track="true"
+                :duration="600"
+                :click-to-scroll="true"
+                :bezier-easing-value="'.5,0,.35,1'">
+                    <!-- logo -->
+                    <svg id="SSlogo" @click="reloadPage" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 500 500" xml:space="preserve">
+                        <path id="Bordo" d="M475,25v450H25V25H475 M500,0H0v500h500V0L500,0z"/>
+                        <g id="Marchio">
+                            <g>
+                                <path d="M175.9,324.3c-0.7-0.7-1.2-1.3-1.8-2.1c-0.2-0.2-0.3-0.4-0.5-0.7s-0.4-0.6-0.6-0.8c-0.1-0.2-0.3-0.4-0.4-0.7
+                                    c-0.1-0.1-0.2-0.3-0.3-0.4l-0.1-0.1c-0.2-0.3-0.4-0.7-0.6-1c-0.2-0.3-0.3-0.7-0.4-1c-0.1-0.1-0.1-0.1-0.1-0.2
+                                    c-0.1-0.3-0.3-0.6-0.4-0.9s-0.3-0.7-0.4-1c-0.1-0.1-0.1-0.2-0.1-0.3c-0.1-0.2-0.2-0.4-0.2-0.7c-0.1-0.1-0.1-0.3-0.1-0.4
+                                    c-0.1-0.1-0.1-0.4-0.1-0.6c-0.1-0.2-0.1-0.4-0.1-0.7c0-0.1-0.1-0.2-0.1-0.3c-0.1-0.2-0.1-0.4-0.1-0.7l-0.1-0.4
+                                    c-0.1-0.2-0.1-0.5-0.1-0.7c0-0.1,0-0.2,0-0.2c-0.1-0.3-0.1-0.7-0.1-1c-0.1-0.3-0.1-0.7-0.1-1.1c0-0.2,0-0.4,0-0.6
+                                    c0-6.2,2.4-12.1,6.8-16.5l-25.2-24.3c-0.1,0.1-0.2,0.2-0.4,0.4c-10.4,10.8-16.2,25.3-16.2,40.3c0,0.2,0,0.4,0,0.6
+                                    c0.3,32.1,26.7,57.9,58.8,57.6c15.2-0.1,29.8-6.2,40.6-17.1l-24.6-24.8C199.8,333.4,185,333.4,175.9,324.3"/>
+                                <path d="M348.8,266.6l-19.9-19.9l-37.7-37.8c-8.9-9.3-8.5-24.1,0.8-32.9c9-8.6,23.1-8.6,32.1,0l24.7-24.7
+                                    c-22.9-22.6-59.7-22.6-82.4,0.2c-22.6,22.7-22.6,59.5,0,82.2l19.9,19.9l37.8,37.8c9.3,9,9.5,23.7,0.4,32.9s-23.7,9.5-32.9,0.4
+                                    c-0.2-0.1-0.3-0.3-0.4-0.4l-37.8-37.8l-19.9-19.9l-19.9-19.9L175.8,209c-9.3-9-9.5-23.7-0.4-32.9c9-9.2,23.7-9.5,32.9-0.4
+                                    c0.2,0.1,0.3,0.3,0.4,0.4l24.7-24.7c-22.6-22.9-59.5-23.2-82.3-0.7s-23.2,59.5-0.7,82.3c0.2,0.2,0.4,0.4,0.7,0.7l19.9,19.9
+                                    l75.6,75.5l19.9,19.9c22.6,22.9,59.5,22.9,82.3,0.3c22.8-22.6,22.9-59.5,0.3-82.3C349.1,266.9,349,266.7,348.8,266.6"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <!-- navbar -->
+                    <ul>
+                        <li>
+                            <span>01.</span>
+                            <a href="/#about" class="scrollactive-item nav-item">About</a>
+                        </li>
+                        <li>
+                            <span>02.</span>
+                            <a href="/#skills" class="scrollactive-item nav-item">Skills</a>
+                        </li>
+                        <li>
+                            <span>03.</span>
+                            <a href="/#work" class="scrollactive-item nav-item">Work</a>
+                        </li>
+                        <li>
+                            <span>04.</span>
+                            <a href="/#contact" class="scrollactive-item nav-item">Contact</a>
+                        </li>
+                    </ul>
+                </scrollactive>
+                <!-- /nav desktop -->
+
+                <!-- nav mobile -->
+                <scrollactive id="nav-sm" 
+                active-class="active"
+                :offset="100"
+                :always-track="true"
+                :duration="600"
+                :click-to-scroll="true"
+                :bezier-easing-value="'.5,0,.35,1'">
+                    <!-- logo -->
+                    <svg id="SSlogo" @click="reloadPage" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 500 500" xml:space="preserve">
+                        <path id="Bordo" d="M475,25v450H25V25H475 M500,0H0v500h500V0L500,0z"/>
+                        <g id="Marchio">
+                            <g>
+                                <path d="M175.9,324.3c-0.7-0.7-1.2-1.3-1.8-2.1c-0.2-0.2-0.3-0.4-0.5-0.7s-0.4-0.6-0.6-0.8c-0.1-0.2-0.3-0.4-0.4-0.7
+                                    c-0.1-0.1-0.2-0.3-0.3-0.4l-0.1-0.1c-0.2-0.3-0.4-0.7-0.6-1c-0.2-0.3-0.3-0.7-0.4-1c-0.1-0.1-0.1-0.1-0.1-0.2
+                                    c-0.1-0.3-0.3-0.6-0.4-0.9s-0.3-0.7-0.4-1c-0.1-0.1-0.1-0.2-0.1-0.3c-0.1-0.2-0.2-0.4-0.2-0.7c-0.1-0.1-0.1-0.3-0.1-0.4
+                                    c-0.1-0.1-0.1-0.4-0.1-0.6c-0.1-0.2-0.1-0.4-0.1-0.7c0-0.1-0.1-0.2-0.1-0.3c-0.1-0.2-0.1-0.4-0.1-0.7l-0.1-0.4
+                                    c-0.1-0.2-0.1-0.5-0.1-0.7c0-0.1,0-0.2,0-0.2c-0.1-0.3-0.1-0.7-0.1-1c-0.1-0.3-0.1-0.7-0.1-1.1c0-0.2,0-0.4,0-0.6
+                                    c0-6.2,2.4-12.1,6.8-16.5l-25.2-24.3c-0.1,0.1-0.2,0.2-0.4,0.4c-10.4,10.8-16.2,25.3-16.2,40.3c0,0.2,0,0.4,0,0.6
+                                    c0.3,32.1,26.7,57.9,58.8,57.6c15.2-0.1,29.8-6.2,40.6-17.1l-24.6-24.8C199.8,333.4,185,333.4,175.9,324.3"/>
+                                <path d="M348.8,266.6l-19.9-19.9l-37.7-37.8c-8.9-9.3-8.5-24.1,0.8-32.9c9-8.6,23.1-8.6,32.1,0l24.7-24.7
+                                    c-22.9-22.6-59.7-22.6-82.4,0.2c-22.6,22.7-22.6,59.5,0,82.2l19.9,19.9l37.8,37.8c9.3,9,9.5,23.7,0.4,32.9s-23.7,9.5-32.9,0.4
+                                    c-0.2-0.1-0.3-0.3-0.4-0.4l-37.8-37.8l-19.9-19.9l-19.9-19.9L175.8,209c-9.3-9-9.5-23.7-0.4-32.9c9-9.2,23.7-9.5,32.9-0.4
+                                    c0.2,0.1,0.3,0.3,0.4,0.4l24.7-24.7c-22.6-22.9-59.5-23.2-82.3-0.7s-23.2,59.5-0.7,82.3c0.2,0.2,0.4,0.4,0.7,0.7l19.9,19.9
+                                    l75.6,75.5l19.9,19.9c22.6,22.9,59.5,22.9,82.3,0.3c22.8-22.6,22.9-59.5,0.3-82.3C349.1,266.9,349,266.7,348.8,266.6"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <!-- hamburger icon -->
+                    <svg @click="showNav" version="1.1" id="hamburger-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+                        <rect y="-2" width="300" height="30"/>
+                        <rect x="75" y="135.1" width="225" height="30"/>
+                        <rect x="150" y="270" width="150" height="30"/>
+                    </svg>
+                    <!-- navbar -->
+                    <ul class="nav-tab" :class="navbarShow ? 'show' : ''">
+                        <li>
+                            <span>01.</span>
+                            <a href="/#about" class="scrollactive-item nav-item" @click="navbarShow = false">About</a>
+                        </li>
+                        <li>
+                            <span>02.</span>
+                            <a href="/#skills" class="scrollactive-item nav-item" @click="navbarShow = false">Skills</a>
+                        </li>
+                        <li>
+                            <span>03.</span>
+                            <a href="/#work" class="scrollactive-item nav-item" @click="navbarShow = false">Work</a>
+                        </li>
+                        <li>
+                            <span>04.</span>
+                            <a href="/#contact" class="scrollactive-item nav-item" @click="navbarShow = false">Contact</a>
+                        </li>
+                    </ul>
+                </scrollactive>
+                <!-- /nav mobile -->
+            </nav>
+        </header>
+        <!-- /HEADER -->
+        
+        <!-- MAIN -->
+        <main>
+            <div class="container">
+                <div id="err404">
+                    <h1>404</h1>
+                    <h2>Page Not Found</h2>
+                    <a href="/" class="btn">Go Homepage</a>
+                </div>    
+            </div>
+        </main>
+        <!-- /MAIN -->
+
+        <!-- FOOTER -->
+        <footer>
+            <a href="https://www.linkedin.com/in/simonesichili/" target="_blank" rel="noopener noreferrer">&copy; {{ currentDate }}  Developed by Simone Sichili </a>
+        </footer>
+        <!-- /FOOTER -->
+
+        <!-- SIDE ELEMENTS -->
+        <section id="side-elements">
+            <div class="left">
+                <ul>
+                    <li>
+                        <a href="https://github.com/SimoneSichili" target="_blank" rel="noopener noreferrer">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>GitHub icon</title>
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/simonesichili/" target="_blank" rel="noopener noreferrer">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>LinkedIn icon</title>
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>     
+            </div>
+            <div class="right">
+                <a href="mailto:simone.sichili@gmail.com">simone.sichili@gmail.com</a>
+            </div>
+        </section>
+        <!-- /SIDE ELEMENTS -->
+
+    </div>
+
+    <!-- my js -->
+    <script src="js/app.js"></script>
+</body>
+</html>
