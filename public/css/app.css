@@ -34,7 +34,7 @@ body {
   display: inline-block;
   padding: 20px 30px;
   text-decoration: none;
-  color: #00FFFF;
+  color: #00FFFF !important;
   background-color: transparent;
   font-family: "Fira Code", "Lucida Console", "Courier", monospace;
   border: 1px solid #00FFFF;
@@ -43,6 +43,10 @@ body {
 }
 .btn:hover {
   background-color: rgba(0, 255, 255, 0.05);
+}
+
+.btn-sm {
+  padding: 10px 20px;
 }
 
 .heading {
@@ -189,17 +193,21 @@ body {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   z-index: 9;
 }
-#nav-lg #SSlogo {
+#nav-lg > a {
+  display: flex;
+}
+#nav-lg > a #SSlogo {
   width: 40px;
   fill: #ccd6f6;
   cursor: pointer;
 }
-#nav-lg #SSlogo:hover {
+#nav-lg > a #SSlogo:hover {
   fill: #00FFFF;
 }
 #nav-lg ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
 }
 #nav-lg ul li {
@@ -243,12 +251,15 @@ body {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index: 9;
   }
-  #nav-sm #SSlogo {
+  #nav-sm > a {
+    display: flex;
+  }
+  #nav-sm > a #SSlogo {
     width: 40px;
     fill: #ccd6f6;
     cursor: pointer;
   }
-  #nav-sm #SSlogo:hover {
+  #nav-sm > a #SSlogo:hover {
     fill: #00FFFF;
   }
   #nav-sm #hamburger-menu {
@@ -289,6 +300,10 @@ body {
   }
   #nav-sm ul li a:hover {
     color: #00FFFF;
+  }
+  #nav-sm ul li .btn {
+    align-self: center;
+    width: 130px;
   }
 }
 #hero {

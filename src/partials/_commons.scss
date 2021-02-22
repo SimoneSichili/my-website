@@ -27,7 +27,7 @@ body {
     display: inline-block;
     padding: 20px 30px;
     text-decoration: none;
-    color: $secondaryColor;
+    color: $secondaryColor !important;
     background-color: transparent;
     font-family: $secondaryFont;
     border: 1px solid $secondaryColor;
@@ -36,6 +36,10 @@ body {
     &:hover {
         background-color: rgba($secondaryColor, 0.05);
     }
+}
+
+.btn-sm {
+    padding: 10px 20px;
 }
 
 .heading {

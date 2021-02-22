@@ -14,17 +14,21 @@
     background-color: $mainColorDark;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index: 9;
-    #SSlogo {
-        width: 40px;
-        fill: $mainTextLight;
-        cursor: pointer;
-        &:hover {
-            fill: $secondaryColor;
+    >a {
+        display: flex;
+        #SSlogo {
+            width: 40px;
+            fill: $mainTextLight;
+            cursor: pointer;
+            &:hover {
+                fill: $secondaryColor;
+            }
         }
     }
     ul {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         list-style: none;
         li {
             margin-left: 30px;
@@ -70,12 +74,15 @@
         background-color: $mainColorDark;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         z-index: 9;
-        #SSlogo {
-            width: 40px;
-            fill: $mainTextLight;
-            cursor: pointer;
-            &:hover {
-                fill: $secondaryColor;
+        >a {
+            display: flex;
+            #SSlogo {
+                width: 40px;
+                fill: $mainTextLight;
+                cursor: pointer;
+                &:hover {
+                    fill: $secondaryColor;
+                }
             }
         }
         #hamburger-menu {
@@ -114,6 +121,10 @@
                     &:hover {
                         color: $secondaryColor;
                     }
+                }
+                .btn {
+                    align-self: center;
+                    width: 130px;
                 }
             }
         }
