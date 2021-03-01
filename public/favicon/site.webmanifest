@@ -1,0 +1,20 @@
+{
+    "name": "Simone Sichili",
+    "short_name": "Simone Sichili",
+    "start_url": "/",
+    "theme_color": "#282c35",
+    "background_color": "#282c35",
+    "display": "minimal-ui",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
