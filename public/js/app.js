@@ -25,9 +25,10 @@ new vue__WEBPACK_IMPORTED_MODULE_1__.default({
     currentDate: ""
   },
   methods: {
-    reloadPage: function reloadPage() {
-      location.reload();
-      document.documentElement.scrollTop = 0;
+    toTop: function toTop() {
+      document.body.scrollTop = 0; // For Safari
+
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     },
     showNav: function showNav() {
       if (this.navbarShow == false) {

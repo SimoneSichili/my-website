@@ -15,7 +15,7 @@
     <meta name="msapplication-TileColor" content="#282c35">
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#282c35">
-    <link rel="manifest" href="favicon/site.webmanifest" crossorigin="use-credentials">
+    <link rel="manifest" href="site.webmanifest" crossorigin="use-credentials">
     <!-- my css -->
     <link rel="stylesheet" href="css/app.css">
     <!-- title -->
@@ -27,15 +27,9 @@
         <header>
             <nav>
                 <!-- nav desktop -->
-                <scrollactive id="nav-lg" 
-                active-class="active"
-                :offset="100"
-                :always-track="true"
-                :duration="600"
-                :click-to-scroll="true"
-                :bezier-easing-value="'.5,0,.35,1'">
+                <div id="nav-lg">
                     <!-- logo -->
-                    <a href="https//www.simonesichili.com">
+                    <a href="./index.html" :onclick="toTop()">
                         <svg id="SSlogo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 500 500" xml:space="preserve">
                         <path id="Bordo" d="M475,25v450H25V25H475 M500,0H0v500h500V0L500,0z"/>
@@ -61,37 +55,31 @@
                     <ul>
                         <li>
                             <span>01.</span>
-                            <a href="/#about" class="scrollactive-item nav-item">About</a>
+                            <a href="./index.html#about" class="scrollactive-item nav-item">About</a>
                         </li>
                         <li>
                             <span>02.</span>
-                            <a href="/#skills" class="scrollactive-item nav-item">Skills</a>
+                            <a href="./index.html#skills" class="scrollactive-item nav-item">Skills</a>
                         </li>
                         <li>
                             <span>03.</span>
-                            <a href="/#work" class="scrollactive-item nav-item">Work</a>
+                            <a href="./index.html#work" class="scrollactive-item nav-item">Work</a>
                         </li>
                         <li>
                             <span>04.</span>
-                            <a href="/#contact" class="scrollactive-item nav-item">Contact</a>
+                            <a href="./index.html#contact" class="scrollactive-item nav-item">Contact</a>
                         </li>
                         <li>
                             <a href="Simone_Sichili_Resume.pdf" class="btn btn-sm">Resume</a>
                         </li>
                     </ul>
-                </scrollactive>
+                </div>
                 <!-- /nav desktop -->
 
                 <!-- nav mobile -->
-                <scrollactive id="nav-sm" 
-                active-class="active"
-                :offset="100"
-                :always-track="true"
-                :duration="600"
-                :click-to-scroll="true"
-                :bezier-easing-value="'.5,0,.35,1'">
+                <div id="nav-sm">
                     <!-- logo -->
-                    <a href="https//www.simonesichili.com">
+                    <a href="./index.html" :onclick="toTop()">
                         <svg id="SSlogo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 500 500" xml:space="preserve">
                         <path id="Bordo" d="M475,25v450H25V25H475 M500,0H0v500h500V0L500,0z"/>
@@ -124,25 +112,25 @@
                     <ul class="nav-tab" :class="navbarShow ? 'show' : ''">
                         <li>
                             <span>01.</span>
-                            <a href="/#about" class="scrollactive-item nav-item" @click="navbarShow = false">About</a>
+                            <a href="./index.html#about" class="scrollactive-item nav-item" @click="navbarShow = false">About</a>
                         </li>
                         <li>
                             <span>02.</span>
-                            <a href="/#skills" class="scrollactive-item nav-item" @click="navbarShow = false">Skills</a>
+                            <a href="./index.html#skills" class="scrollactive-item nav-item" @click="navbarShow = false">Skills</a>
                         </li>
                         <li>
                             <span>03.</span>
-                            <a href="/#work" class="scrollactive-item nav-item" @click="navbarShow = false">Work</a>
+                            <a href="./index.html#work" class="scrollactive-item nav-item" @click="navbarShow = false">Work</a>
                         </li>
                         <li>
                             <span>04.</span>
-                            <a href="/#contact" class="scrollactive-item nav-item" @click="navbarShow = false">Contact</a>
+                            <a href="./index.html#contact" class="scrollactive-item nav-item" @click="navbarShow = false">Contact</a>
                         </li>
                         <li>
                             <a href="Simone_Sichili_Resume.pdf" class="btn btn-sm">Resume</a>
                         </li>
                     </ul>
-                </scrollactive>
+                </div>
                 <!-- /nav mobile -->
             </nav>
         </header>
